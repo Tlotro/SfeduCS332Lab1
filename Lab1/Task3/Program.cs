@@ -17,7 +17,7 @@ namespace Task3
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            
+            //C:\Users\Михаил\Desktop\Wallpapers\11170.jpg
         }
     }
 }
