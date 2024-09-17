@@ -16,5 +16,19 @@ namespace Task3
         {
             InitializeComponent();
         }
+        private void trackBarV_Scroll(object sender, EventArgs e)
+        {
+            labelV.Text = (trackBarV.Value>0?"+":"")+trackBarV.Value.ToString();
+        }
+
+        private void trackBarH_Scroll(object sender, EventArgs e)
+        {
+            labelH.Text = (trackBarH.Value > 0 ? "+" : "") + trackBarH.Value.ToString();
+        }
+
+        private void trackBarS_Scroll(object sender, EventArgs e)
+        {
+            labelS.Text = (trackBarS.Value > 0 ? "+" : "") + trackBarS.Value.ToString();
+        }
     }
 }
