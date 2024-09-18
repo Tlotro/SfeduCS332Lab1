@@ -8,3 +8,13 @@ C:\Users\79885\source\repos\Task2\Task2\obj\Debug\Task2.csproj.GenerateResource.
 C:\Users\79885\source\repos\Task2\Task2\obj\Debug\Task2.csproj.CoreCompileInputs.cache
 C:\Users\79885\source\repos\Task2\Task2\obj\Debug\Task2.exe
 C:\Users\79885\source\repos\Task2\Task2\obj\Debug\Task2.pdb
+C:\Users\Михаил\Documents\GitHub\SfeduCS332Lab1\Lab1\Task2\bin\Debug\Task2.exe.config
+C:\Users\Михаил\Documents\GitHub\SfeduCS332Lab1\Lab1\Task2\bin\Debug\Task2.exe
+C:\Users\Михаил\Documents\GitHub\SfeduCS332Lab1\Lab1\Task2\bin\Debug\Task2.pdb
+C:\Users\Михаил\Documents\GitHub\SfeduCS332Lab1\Lab1\Task2\obj\Debug\Task2.csproj.AssemblyReference.cache
+C:\Users\Михаил\Documents\GitHub\SfeduCS332Lab1\Lab1\Task2\obj\Debug\Task2.Form1.resources
+C:\Users\Михаил\Documents\GitHub\SfeduCS332Lab1\Lab1\Task2\obj\Debug\Task2.Properties.Resources.resources
+C:\Users\Михаил\Documents\GitHub\SfeduCS332Lab1\Lab1\Task2\obj\Debug\Task2.csproj.GenerateResource.cache
+C:\Users\Михаил\Documents\GitHub\SfeduCS332Lab1\Lab1\Task2\obj\Debug\Task2.csproj.CoreCompileInputs.cache
+C:\Users\Михаил\Documents\GitHub\SfeduCS332Lab1\Lab1\Task2\obj\Debug\Task2.exe
+C:\Users\Михаил\Documents\GitHub\SfeduCS332Lab1\Lab1\Task2\obj\Debug\Task2.pdb
