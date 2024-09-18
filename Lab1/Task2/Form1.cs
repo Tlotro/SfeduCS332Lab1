@@ -53,28 +53,32 @@ namespace Task2
             Series series = new Series("Pixels");
             series.ChartType = SeriesChartType.Spline;
 
+            int[] values = new int[256];
+
             for (int x = 0; x < bitmap.Width; x++)
             {
-                float PixelCount = 0;
                 for (int y = 0; y < bitmap.Height; y++)
                 {
                     switch (channel)
                     {
                         case 'R':
-                            PixelCount += bitmap.GetPixel(x, y).R;
+                            values[bitmap.GetPixel(x, y).R]++;
                             break;
                         case 'G':
-                            PixelCount += bitmap.GetPixel(x, y).G;
+                            values[bitmap.GetPixel(x, y).G]++;
                             break;
                         case 'B':
-                            PixelCount += bitmap.GetPixel(x, y).B;
+                            values[bitmap.GetPixel(x, y).B]++;
                             break;
                         default:
-                            PixelCount += bitmap.GetPixel(x, y).R;
+                            values[bitmap.GetPixel(x, y).R]++;
                             break;
                     }
                 }
-                series.Points.AddXY(x, PixelCount);
+            }
+            for (int x = 0;x < 256; x++)
+            {
+                series.Points.AddXY(x, values[x]);
                 switch (channel)
                 {
                     case 'R':
@@ -90,8 +94,8 @@ namespace Task2
                         series.Points[x].Color = Color.Blue;
                         break;
                 }
-                
             }
+            
             chart.Series.Add(series);
             chart.Invalidate();
         }

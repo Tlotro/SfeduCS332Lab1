@@ -63,9 +63,9 @@ namespace WindowsFormsApp2
             {
                 byte avg;
                 if (method == 1)
-                    avg = (byte)((0.299*color.R + 0.587*color.G + 0.114*color.B) / 3.0);
+                    avg = (byte)((0.299*color.R + 0.587*color.G + 0.114*color.B));
                 else
-                    avg = (byte)((0.2126*color.R + 0.7152*color.G + 0.0722*color.B) / 3.0);
+                    avg = (byte)((0.2126*color.R + 0.7152*color.G + 0.0722*color.B));
                 return Color.FromArgb(avg, avg, avg);
             });
         }
