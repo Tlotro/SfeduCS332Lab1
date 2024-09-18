@@ -275,11 +275,11 @@
             // 
             this.Message.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Message.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Message.Location = new System.Drawing.Point(770, 582);
+            this.Message.Location = new System.Drawing.Point(770, 565);
             this.Message.Name = "Message";
-            this.Message.Size = new System.Drawing.Size(177, 17);
+            this.Message.Size = new System.Drawing.Size(177, 34);
             this.Message.TabIndex = 18;
-            this.Message.Text = "Please, enter the file path";
+            this.Message.Text = "Please, enter the file path or select a file";
             this.Message.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
@@ -296,7 +296,6 @@
             // LoadButton
             // 
             this.LoadButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.LoadButton.Enabled = false;
             this.LoadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LoadButton.Location = new System.Drawing.Point(863, 639);
             this.LoadButton.Name = "LoadButton";

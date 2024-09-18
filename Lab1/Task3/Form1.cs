@@ -38,7 +38,25 @@ namespace Task3
         private void LoadButton_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == "")
-                Message.Text = "Please, enter the file path";
+            {
+                using (OpenFileDialog openFileDialog = new OpenFileDialog())
+                {
+                    openFileDialog.InitialDirectory = "c:\\";
+                    openFileDialog.Filter = "All files (*.*)|*.*|jpeg files (*.jpg)|*.jpg|png files (*.png)|*.png";
+                    openFileDialog.FilterIndex = 2;
+                    openFileDialog.RestoreDirectory = true;
+
+                    if (openFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        bm = new Bitmap(openFileDialog.FileName);
+                        textBox1.Text = openFileDialog.FileName;
+                        Message.Text = "Warning, file already exist";
+                        pictureBox1.Image = bm;
+                        SaveButton.Enabled = true;
+                        UpdateButton.Enabled = true;
+                    }
+                }
+            }
             else if (!File.Exists(textBox1.Text))
                 Message.Text = "File does not exist";
             else
@@ -61,7 +79,10 @@ namespace Task3
                 OverrideButton.Enabled = true;
             }
             else
+            {
                 pictureBox1.Image.Save(textBox1.Text);
+                Message.Text = "Warning, file already exist";
+            }
         }
 
         private void OverrideButton_Click(object sender, EventArgs e)
@@ -75,7 +96,7 @@ namespace Task3
         {
             if (textBox1.Text.Length == 0)
             {
-                LoadButton.Enabled = false;
+                Message.Text = "Please, enter the file path or select a file";
                 SaveButton.Enabled = false;
             }
             else
@@ -115,7 +136,7 @@ namespace Task3
                             H = (60 * (double)(color.B - color.R) / (M - m)) + 120;
                         else H = (60 * (double)(color.R - color.G) / (M - m)) + 240;
 
-                        float S = M == 0 ? 0 : (1 - (m / M));
+                        float S = M == 0 ? 0 : (1 - ((float)m / M));
                         float V = M / 255f;
                         HSV[x, y] = (H, S, V);
                     }
